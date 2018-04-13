@@ -43,14 +43,22 @@ public class User implements UserDetails {
     return authorities;
   }
 
-  @Override
-  public String getPassword() {
-    return password;
+  public Long getId(){
+    return id;
+  }
+
+  public void setId(Long id){
+    this.id = id;
   }
 
   @Override
   public String getUsername() {
     return username;
+  }
+
+  @Override
+  public String getPassword() {
+    return password;
   }
 
   @Override
